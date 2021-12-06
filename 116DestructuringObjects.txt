@@ -1,0 +1,36 @@
+const runner={
+	first:'Eluid',
+	last:'kipchoge',
+	country:'kenya',
+	title:'Elder of the order of the golden heart of kenya'
+}
+
+order doesn't matter
+
+const {first,last,time}=runner;
+
+first=eluid   last=kipchoge   time=undefined
+
+
+only already present key can be used so that would be time is undefined
+
+but we can change the key name
+
+const{country:nation,title:honorific}=runner;
+
+nation=kenya,honorofic=elder of the order of the golden heart of kenya
+
+
+
+using rest
+
+
+
+const {first,last,...other}=runner;
+
+first='Eluid'  last='kipchoge'  other={country:'kenya',title:'Elder of the order of the golden heart of kenya'};
+
+
+
+
+

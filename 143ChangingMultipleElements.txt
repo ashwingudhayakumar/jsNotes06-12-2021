@@ -1,0 +1,11 @@
+const allLIs=document.querySelectorAll('li');
+
+for(let i=0;i<allLIs.length;i++){
+	allLIs[i].innerText='We are the champions';
+}
+
+usually
+
+for(let li of allLIs){
+	li.innerHTML='WE ARE <b>The Champions</b>';
+}

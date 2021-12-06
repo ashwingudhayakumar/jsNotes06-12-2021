@@ -1,0 +1,15 @@
+const results=[{
+	first:'Eliud',last:'Kipchoge',country:'kenya'
+},{
+	first:'Feyisa',last:'Lilesa',country:'Ethiopia'
+},{
+	first:'Galen',last:'Rupp',country:'United States'
+}]
+
+//task is to want the second index country by destructuring
+
+
+[,{country:nation}]=results
+
+nating
+>>ethiopia

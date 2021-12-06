@@ -1,0 +1,88 @@
+the value of this depends on the invocation context of the function it is used in.
+
+const person={
+	first:'Cherilyn',
+	last:'Sarkisian',
+	nickName:'Cher',
+	fullName(){
+	const{
+	first,
+	last,
+	nickName
+	}=this;
+    return `${first} ${last} AKA ${nickName}`;
+	},
+	printBio(){
+	const fullName=this.fullName();
+	console.log(`${fullName} is a person`);
+	}
+}
+
+
+person.printBio()
+>>'Cherilyn Sarkisian AKA cher is a person!'
+
+
+const printBio=person.printBio;
+
+
+printBio()
+>>'Error' this .fullName() is not a function
+
+const person={
+	first:'Cherilyn',
+	last:'Sarkisian',
+	nickName:'Cher',
+	fullName(){
+	const{
+	first,
+	last,
+	nickName
+	}=this;
+    return `${first} ${last} AKA ${nickName}`;
+	},
+	printBio(){
+	console.log(this);           important
+	const fullName=this.fullName();
+	console.log(`${fullName} is a person`);
+	}
+}
+
+printBio=person.printBio();
+
+printBio()global execution
+>>window
+>>'Error' this .fullName() is not a function
+			
+			SHORTCUT 
+person.printBio()=====>this . left object assigned to printBio()
+>>person object
+
+invocation context matters
+
+ArrowFunction
+
+
+const person={
+	first:'Cherilyn',
+	last:'Sarkisian',
+	nickName:'Cher',
+	fullName(){
+	const{
+	first,
+	last,
+	nickName
+	}=this;
+    return `${first} ${last} AKA ${nickName}`;
+	},
+	printBio(){
+	console.log(this);           important
+	const fullName=this.fullName();
+	console.log(`${fullName} is a person`);
+	}
+	laugh:()=>{
+	console.log(this);
+	}
+}
+person.laugh()
+>>window

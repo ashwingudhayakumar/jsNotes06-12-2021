@@ -1,0 +1,62 @@
+Rest params
+collects all remaining arguments into an actual array
+
+function sumAll(...nums){
+	let total=0;
+	for(let n of nums)total+=n;
+	return total;
+}
+
+sumAll(1,2)//3
+sumAll(1,2,3,4,5)//15
+
+
+==================
+
+Rest and reduce
+
+function sum(...nums){
+	return nums.reduce((total,currVal)=>{
+	return total+currVal;
+	})
+}
+sum(4,5,6,7)//22
+=====================
+
+
+function fullName(first,last,...titles){
+	console.log(first);
+	console.log(last);
+	console.log(titles);
+}
+
+fullName('tom','jones','III','order of the phoenix');
+
+tome
+jones
+III,order of the phoenix
+
+=============================
+
+function fullName(...titles,first,last){
+	console.log(first);
+	console.log(last);
+	console.log(titles);
+}
+
+fullName('tom','jones','III','order of the phoenix');
+
+>>ERROR
+
+==============================
+const multiply=(...nums)=>nums.reduce((total,currVal)=>total*currVal);
+
+rest works in arrow function
+
+
+================================
+
+Rest name meaning is it collects after certain things we specifically mention,rest of the parameter so it is called as rest
+
+spread used in [] or {}
+Rest used in () functions

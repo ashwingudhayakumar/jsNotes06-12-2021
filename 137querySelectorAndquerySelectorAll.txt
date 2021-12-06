@@ -1,0 +1,32 @@
+document.querySelector('h1');
+//finds first h1 element
+
+document.querySelector('#red');
+//finds first element with ID of red
+
+document.querySelector('.big');
+//finds first element with class of big
+
+something more specific means
+
+
+document.querySelector('body section ul li.special');
+
+
+css attribute selector syntax:
+
+document.querySelector('input[type='password']')
+
+
+document.querySelectorAll('input');
+
+>>it gives array of objects of id named as inputs
+
+
+
+
+
+getElements gives html collection
+
+where as querySelector gives nodelist
+

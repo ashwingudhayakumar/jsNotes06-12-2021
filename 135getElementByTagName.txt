@@ -1,0 +1,9 @@
+this is not getElementByTagName
+
+
+it is getElementsByTagName
+                |
+                |
+                because we got more than one element in while search via tag name
+
+                

@@ -1,0 +1,66 @@
+Rest
+
+without rest
+function sum(){
+	let total=0;
+	for(let i=0;i<arguments.length;i++){
+	total+=arguments[i];
+	}
+	return total;
+}
+sum(8,4,3,2);
+sum(2,3);
+==========================
+function a(){
+	console.log(arguments);
+}
+
+a(1,2,3);
+>>Arguments[1,2,3]
+
+============================
+
+function sum(){
+	return arguments.reduce((total,currVal)=>{
+	return total+currVal;
+	})
+}
+sum(1,2,3,4,5);
+>>error
+
+argument is not a array
+it is array like object(has a length property,does not have array methods like push/pop)
+
+=============================
+
+1st way
+
+function sum(){
+	const argsArr=[...arguments];
+	return argsArr.reduce((total,currVal)=>{
+	return total+currVal;
+	})
+}
+sum(1,2,3,4,5);
+>>15
+================================
+
+function fullName(first,last){
+	console.log(arguments);
+	console.log(first);
+}
+
+//even if we want first and last ,the arguments capture whole thing passed into the array
+
+==================================
+
+const multiply=()=>{
+	console.log(arguments);
+}
+
+multiply(1,2,3,4);
+>>error
+//arguments not work in arrow function
+
+
+===================================

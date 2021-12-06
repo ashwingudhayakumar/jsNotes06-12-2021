@@ -1,0 +1,40 @@
+const role='host';
+const person='jools holland';
+const role2='director';
+const person2='james cameron';
+
+//const team={}
+//team[role]=person;
+//team[role2]=person2;
+
+
+
+now computeted properties for dynamic keys [] is for dynamic so
+
+
+const team={
+	[role]=person,
+	[role2]=person2,
+	//also
+	[1+6+9]='sixteen'
+}
+
+//task accept object in the function add a new key and return that copy object
+
+without computed
+
+function addProp(obj,k,v){
+	const copy={
+	...obj
+	};
+	copy[k]=v;
+	return copy;
+}
+
+
+with computed
+
+function addProp(obj,k,v){
+	const copy={[k]:v,...obj};
+	return copy;
+}

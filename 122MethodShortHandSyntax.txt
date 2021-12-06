@@ -1,0 +1,9 @@
+const auth={
+username:'TommyBot',
+	login(){
+	conole.log('logged you in')
+	},
+	logout(){
+	console.log('GoodBye')
+	}
+}

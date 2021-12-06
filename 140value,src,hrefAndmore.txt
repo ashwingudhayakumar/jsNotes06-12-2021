@@ -1,0 +1,51 @@
+<form action=''>
+<input type='text' placeholder='Bear Name'>
+<input type='password' placeholder='password'>
+<input type='checkbox'>
+<input type='range' min='100' max='500'/>
+<input type='submit'>
+</form>
+
+
+const inputs=document.querySelectorAll('input');
+inputs
+>>NodeList(5)
+
+inputs[0].value
+>>'taco'
+
+
+now check for the checkbox
+before clicking checkbox means
+inputs[2].value
+>>'on'
+after clicking checkbox also
+inputs[2].value
+>>'on'
+
+inputs[2].checked gives the boolean value of checked
+
+
+Range:
+
+inputs[3].value
+>>'130'
+input[3].value
+>>'437'
+
+<input type='range' min='100' max='500' step='50'/>
+>>50 >>450 >>250 kind of
+
+placeholder also changable
+
+
+<a href='http://www.cats.com/cute'>Cats are adorable somethimes</a>
+
+const a=document.querySelector('a');
+a.href
+>>'htt[://www.cats.com'
+
+
+const img=document.querySelector('img');
+img.src = we can change that
+

@@ -1,0 +1,39 @@
+const FirstLI=document.querySelector('li');
+
+FirstLI.parentElement
+>ul
+FirstLI.parentElement.parentElement
+>body
+FirstLI.parentElement.parentElement.parentElement
+>html
+FirstLI.parentElement.parentElement.parentElement.parentElement
+>null
+
+
+
+const ul=document.querySelector('ul');
+ul.children
+>>HEMLCollection(3)[li.special,li,li.special]
+  >0:li.special
+  >1:li
+  >2:li.special
+
+
+>ul.children[0]
+>><li >first thing</li>
+
+ul.children[0].innerText
+>>first thing
+
+firstLI
+>>First Thing
+firstLI.nextElementSibling
+>>Second Thing
+firstLI.nextElementSibling.nextElementSibling
+>>Third Thing
+
+
+const thirdLI=firstLI.nextElementSibling.nextElementSibiling
+
+thirdLI.previousElementSibling
+>>SecondThing

@@ -1,0 +1,17 @@
+const range=document.querySelector('input[type='range']);
+range.getAttribute('max');
+>>500
+
+range.getAttribute('min');
+>>100
+
+range.getAttribute('type');
+>>'range'
+
+range.getAttribute('lolol');
+>>null
+
+range.setAttribute('min','-500');
+
+range.setAttribute('type','radio');
+

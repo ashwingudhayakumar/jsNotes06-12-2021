@@ -1,0 +1,40 @@
+we can add functoions as properties on objects.
+
+we call them methods!
+
+const math={
+	multiply:function(x,y){return x*y;},
+	divide:function(x,y){return x/y;},
+	square:function(x){return x*x;}
+}
+
+
+the below is function
+
+const add=function(x,y){
+	return x+y;
+}
+
+'hello'.toUpperCase(); this toUpperCase() can be accessed by . so it is built in method
+
+we going to do user defined method
+
+const add=function(x,y){
+	return x+y;
+}
+
+now only we see shorthand
+
+const math={
+	add
+}
+>>math
+>>{add:f}
+
+normal way
+
+const math={
+	add:function(x,y){
+	return x+y;
+	}
+}

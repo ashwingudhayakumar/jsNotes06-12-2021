@@ -1,0 +1,46 @@
+The secret life of objects
+
+we have seen the basics of object literals,but there is so much more to talk about with objects
+
+add methods to objects
+
+use new object shorthand syntax
+
+use computed properties
+
+understand prototypes
+
+explain how the %$@# this works.
+
+
+
+without shortHand:
+const getStats=(arr)=>{
+	const max=Math.max(...arr);
+	const min=Math.min(...arr);
+	const sum=arr.reduces((sum,r)=>sum+r);
+	const avg=sum/arr.length;
+	return {
+	max:max,min:min,sum:sum,avg:avg   |||this part gonna change
+	}
+}
+const reviews=[4.5,5.0,3.44,2.8,3.5,4.0,3.5];
+const stats=getStats(reviews);
+
+
+with shortHand:
+
+
+without shortHand:
+const getStats=(arr)=>{
+	const max=Math.max(...arr);
+	const min=Math.min(...arr);
+	const sum=arr.reduces((sum,r)=>sum+r);
+	const avg=sum/arr.length;
+	return {
+	max,min,sum,avg  |||this changed
+	}
+}
+const reviews=[4.5,5.0,3.44,2.8,3.5,4.0,3.5];
+const stats=getStats(reviews);
+

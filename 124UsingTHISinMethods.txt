@@ -1,0 +1,46 @@
+function(){
+	console.log('hi');
+	console.log(this);
+}
+
+this->refers->global->window
+
+
+const person={
+	first:'cherilyn',
+	last:'sarkisian',
+	fullName(){
+	console.log(this);
+	}
+}
+
+in this ,this keyword refers person object 
+
+const person={
+	first:'cherilyn',
+	last:'Sarkisian',
+	nickName:'cher',
+	fullName(){
+	console.log(this.first);
+	}
+}
+
+>>person.fullName();
+>>cherilyn
+
+
+const person={
+	first:'cherilyn',
+	last:'Sarkisian',
+	nickName:'cher',
+	fullName(){
+	const {first,last,nickName}=this;
+	console.log(first,last,'Aka',nickname);
+	}
+}
+person.fullName();
+>>cherilyn Sarkisian Aka cher
+
+person.nickName='CHERRRRRRRRRR'
+
+

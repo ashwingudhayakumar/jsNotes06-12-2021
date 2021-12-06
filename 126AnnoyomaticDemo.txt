@@ -1,0 +1,36 @@
+//task is to when annoyer start call it print random value from array and stop calls means it has to stop
+const annoyer={
+phrases:['literally','cray cray','I can"t even','Totes','Yolo','can"t stop,won"t stop'],
+pickPhrase(){
+const {phrases}=this;
+const idx=Math.floor(Math.random()*phrases.length)	;
+return phrases[idx];
+},
+start(){
+    setInterval(function(){console.log("ash")},3000)
+	
+}
+}
+annoyer.start()
+>>at each 3000 millisecond ash prints infinitely
+
+
+only start() changes
+
+case 2:
+
+start(){
+	setInterval(console.log(this.pickPhrase()),3000);
+}
+>>as we already see another function reference calls current reference like setInterval() calls pickPhrase() means it gives ERROR
+
+arrow doesn't have it own this
+
+so
+
+start(){
+	this.timerId=setInterval(()=>console.log(this.pcikPhrase()),3000);
+}
+ stope(){
+ clearInterval(this.timerId);
+ }

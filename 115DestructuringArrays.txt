@@ -1,0 +1,29 @@
+A short,clean syntax to unpack:
+	values from arrays
+	properties from objects
+into disting variables
+
+const raceResults=[
+'ash','win','edaps','ajith','dhanasekar'];
+
+//this is the one way to unpack
+//const gold=raceResults[0];
+//const silver=raceResults[1];
+//const bronze=raceResults[2];
+
+
+//best way is 
+
+const[gold,silver,bronze]=raceResults;
+
+//if you want skip
+
+const [first,,,fourth]=raceResults;
+
+//first=ash  fourth=ajith
+
+const[winner,...others]=raceResults;
+
+//winner=ash  others=remaining
+
+

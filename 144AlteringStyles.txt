@@ -1,0 +1,50 @@
+const h1=document.querySelector('h1')
+
+h1.style.color
+
+>>''  //it gives empty string
+
+we can change that but we can't read 
+
+only inline can be read
+
+<h1 style='color:orchid' class='header'>My WebPage</h1>
+
+h1.style.color
+
+>>"Orchid"
+
+
+
+const p=document.querySelector('p');
+
+p.style.color='white';
+
+
+
+
+p.style.background-color
+>>ERROR
+
+
+
+we usually type like background-color in css but this is not valid in  js
+
+you can't type like
+
+const b-w='1'
+>>Error
+
+camelcase gonna work
+
+p.style.backgroundColro this works
+
+
+
+const allLIs=document.querySelectorAll('li');
+const colors=['red','orange','yellow','green','blue','purple'];
+
+allLIs.forEach((el,i)=>{
+	 const color=colors[i];
+	 el.style.color=color;
+}) 

@@ -1,0 +1,31 @@
+this is a keyword
+ref to the current execution scope
+it is going to give object back
+
+function sayHi(){
+	console.log('hi');
+	console.log(this);
+}
+>>hi
+>>window
+
+window is the global scope in the browser
+
+where sayHi is also added as a property to the window object
+
+alert() is a globla function
+
+but alert is a property of a window
+
+we can access like this
+
+window.alert()
+
+var keys=5;
+
+window.keys;
+>>5
+
+let num=7;
+window.num;
+>>undefined

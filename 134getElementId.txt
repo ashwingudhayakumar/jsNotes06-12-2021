@@ -1,0 +1,18 @@
+1 select
+2 manipulate
+
+document.getElementById('bear-photo');
+
+>>it output is something like html but it is object only
+
+const img=document.getElementById('bear-photo');
+
+console.dir(img);
+
+>>it shows properties of the object
+
+we can see the type at bottom of the object
+
+if that has a match we get the object
+
+if not means we get null

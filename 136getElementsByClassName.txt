@@ -1,0 +1,12 @@
+if we get it means it stuffed inside the array of objects 
+
+because it contains lot
+
+in term of classes
+
+if we got nothing means it is empty array
+
+
+
+
+but in id it is uniques so only we get null

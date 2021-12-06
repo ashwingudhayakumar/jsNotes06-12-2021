@@ -1,0 +1,31 @@
+Dom is the portal of the javascript into the world of webpage
+
+<body>
+<h1>Hello</h1>
+<ul>
+<li>Water plants</li>
+<li>Get some sleep</li>
+</ul>
+</body>
+           Document  I'm an object
+             |
+             |
+            body   me too
+            /\
+           /  \
+           h1  ul
+               /\
+              /  \
+              li  li
+
+              everything is an object with that we can change the attribute or tag itself
+
+
+log prints the toString representation of the object
+
+
+dir prints the property
+
+
+
+

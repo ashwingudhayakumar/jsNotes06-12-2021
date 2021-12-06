@@ -1,0 +1,28 @@
+const form=document.querySelector('form');
+
+form.innerText or textContent means we wont get anything
+
+but if we type like
+
+form.innerHTML
+
+'<input type='text' placeholder='Bear Name'>
+<input type='password' placeholder='password'>
+<input type='submit'>'
+
+form.innerHTML gives string so you have to type html as string to manipulate
+
+
+const h1=document.querySelector('h1');
+h1.innerHTML;
+>>"My WebPage"
+h1.innerHTML+='is cool'
+'My WebPage is cool'
+
+h1.innerHTML+= '<b>come</b>'
+'My WebPage is cool COME'
+
+h1.innerText +='<b>come</b>'
+'My WebPage is cool COME <b>come</b>'
+
+this is the differ between innerHTML as well as innerText

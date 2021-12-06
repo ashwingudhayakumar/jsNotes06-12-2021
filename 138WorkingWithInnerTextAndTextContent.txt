@@ -1,0 +1,53 @@
+const h1=document.querySelector('h1');
+
+h1.innerText
+>>'My WebPage'
+
+inner tag gives the content stored inbetween <h1></h1>
+
+const ul=document.querySelector('u1');
+u1.innerText
+
+>>'First Thing
+Second Thing
+Thier Thing'
+
+
+document.querySelector('body');
+it works
+
+document.body.innerText
+
+everything inside body displays
+
+h1.innerText=='I"Hungry!';
+
+it changes
+
+
+const ul=document.querySelector('u1');
+u1.innerText
+
+>>'First Thing
+Second Thing
+Thier Thing'
+  
+
+in this scenario if we type like u1.innerText='something means';
+
+'First Thing
+Second Thing
+Thier Thing' this disappers and 'something means' occupies
+
+
+
+innerText only displays the content
+
+whereas textContent displays content as well as intentation
+
+
+innerText aware of what it displays like hidden also hidden in innerText and script function also not displays and not indentation
+
+textContent dont care hidden are shown,script also shown,and indentation also
+
+
